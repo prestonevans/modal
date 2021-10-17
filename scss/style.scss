@@ -1,5 +1,45 @@
 * {
-	border: 0; 
+	border: 0;
 	padding: 0;
 	margin: 0;
+}
+button {
+	padding: .5em 2em;
+	background-color: cadetblue;
+	color: white;
+	border-radius: 1em;
+	transition: .25s ease-in-out;
+	&:hover {
+		background-color: rgb(74, 124, 126);
+		cursor: pointer;
+		transform: scale(1.2);
+	}
+}
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.541);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: crosshair;
+	.modalBox {
+		cursor: default;
+		background-color: white;
+		padding: 4rem;
+		border-radius: 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+h1 {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+.displayNone {
+	display: none;
 }
